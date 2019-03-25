@@ -1,0 +1,37 @@
+body {
+    /* background-color: #CDD6D8; */
+    background-color: #183446;
+}
+
+.jumbotron {
+    background-color: #601313;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.card-header {
+    background-color: #046E8F;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #97B7C1;
+ }
+
+ .table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: #A5C4CC; 
+ }
+
+ th {
+     background-color: #601313;
+     color: whitesmoke;
+ }
+
+ #add-card {
+     background-color: #A5C4CC;
+ }
+
+ #submit-button {
+     background-color: #046E8F
+ }

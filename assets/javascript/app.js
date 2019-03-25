@@ -15,7 +15,6 @@ $(document).ready(function () {
       $("#submit-button").on("click", function(event) {
         event.preventDefault();
 
-        alert("hi")
         var trainName = $("#train-name").val().trim();
         var destination = $("#destination").val().trim();
         var firstTrainTime = $("#first-train-time").val().trim();
@@ -49,11 +48,9 @@ $(document).ready(function () {
           firstTrainMoment = moment(firstTrainTime, "HH:mm");
           var nextArrivalMinutes = moment().diff(firstTrainMoment, "minutes");
           var minutesAway = frequency - (nextArrivalMinutes % frequency);
-          console.log(nextArrivalMinutes)
-          console.log(minutesAway);
           var nextArrivalObj = moment().add(minutesAway, "minutes");
           var nextArrival = nextArrivalObj.format("LT")
-          console.log(nextArrival)
+          
          
 
           var newRow = $("<tr>");
